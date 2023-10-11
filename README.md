@@ -57,3 +57,5 @@ La funcion main() es llamada a traves de un if que nos mostrara un mensaje de bi
 ### Desarrollo de la funciones de buscar pelicula o series por titulo ###
 #########################################################################
 
+Ambas funciones realizan lo mismo por eso se explicara como si fuese una unica funcion pero realmente se va desarrollar dos funciones como para separar los datos que se mostrara de las peliculas de la información de las series.
+
