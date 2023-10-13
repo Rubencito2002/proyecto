@@ -49,19 +49,19 @@ def mostrarSerie(datos):
 
 # Creamos una funcion para buscar las peliculas y series por su titulo.
 def buscarPeliculaYSeriePorTitulo(api_key):
-    busqueda = input("\nIntroduce el título de la serie: ")
+    busqueda = input("\nIntroduce el título de la pelicula o serie: ")
     url = f"http://www.omdbapi.com/?apikey={api_key}&t={busqueda}"
     response = requests.get(url) # Usando la url de la API lo que hace la peticion con lo que el usuario ha solicitado.
 
     if response.status_code == 200: # Es para comprobar si se ha conectado a la API cuando se ha hecho la llamada anteriomente.
         datos = json.loads(response.text)
         if datos.get("Response") == "True": # Si en los datos cargados existe la informacion que se solicita pues nos mostrara lo solicitado.
-            if datos.get("Type") == "movie":
+            if datos.get("Type") == "movie": # Pero antes de mostrar se comprobara si lo solicitado es una pelicula o una serie.
                 mostrarPelicula(datos)
             else:
                 mostrarSerie(datos)
         else:
-            print("Series not found.")
+            print("Series or Movie not found.")
     else:
         print("Error connecting to API.") # Mensaje de Error por si no se ha podido conectar a la API.
 
