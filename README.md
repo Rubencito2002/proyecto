@@ -66,9 +66,10 @@ Si los datos existe preguntaremos si la información que nos solicita es una pel
 ### Desarrollo de la funcion de mostrar pelicula ###
 ####################################################
 
-
+La función de mostrar pelicula lo que realiza es mostrar linea por linea toda la iformación que queremos mostrar. Hay dos casos que antes de mostrar se tiene que hacer una pregunta con un if para que se cumpla la condición de que si esa informacion existe muestre esa información y si no hay información que muestre que no hay información de ese datos de la pelicula.
 
 ####################################################
 ### Desarrollo de la funciones de mostrar series ###
 ####################################################
 
+La función de mostrar serie lo que realiza es mostrar linea por linea toda la iformación que queremos mostrar. Hay dos casos que antes de mostrar se tiene que hacer una pregunta con un if para que se cumpla la condición de que si esa informacion existe muestre esa información y si no hay información que muestre que no hay información de ese datos de la serie.

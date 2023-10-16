@@ -12,7 +12,7 @@ def mostrarPelicula(datos):
     if datos.get("Director") == "":
         print(f"Director: {datos['Director']}")
     else:
-        print("Director: No hay información")
+        print("Director: The director is not known.")
     print(f"Genre: {datos['Genre']}")
     print(f"Actors: {datos['Actors']}")
     print(f"Sinopsis: {datos['Plot']}")
@@ -22,7 +22,7 @@ def mostrarPelicula(datos):
     if datos.get("Awards") == "":
         print(f"Awards: {datos['Awards']}")
     else:
-        print(f"Awards: Has not been awarded yet")
+        print(f"Awards: Has not been awarded yet.")
     print(f"Taquilla: {datos['BoxOffice']}")
 
 # Creamos una funcion para mostrar toda la información de la serie.
@@ -35,7 +35,7 @@ def mostrarSerie(datos):
     if datos.get("Director") == "":
         print(f"Director: {datos['Director']}")
     else:
-        print(f"Director: No hay informacion")
+        print(f"Director: The director is not known.")
     print(f"Genre: {datos['Genre']}")
     print(f"Actors: {datos['Actors']}")
     print(f"Sinopsis: {datos['Plot']}")
@@ -45,7 +45,7 @@ def mostrarSerie(datos):
     if datos.get("Awards") == "":
         print(f"Awards: {datos['Awards']}")
     else:
-        print(f"Awards: Has not been awarded yet")
+        print(f"Awards: Has not been awarded yet.")
 
 # Creamos una funcion para buscar las peliculas y series por su titulo.
 def buscarPeliculaYSeriePorTitulo(api_key):
